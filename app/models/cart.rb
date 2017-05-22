@@ -18,4 +18,8 @@ end
       end
       sum
     end
+
+    def clean!
+    cart_items.destroy_all
+  end
 end
