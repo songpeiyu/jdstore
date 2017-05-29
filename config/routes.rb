@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
   namespace :admin do
      resources :products
+     resources :orders
  end
  resources :products do
        member do
@@ -24,7 +25,7 @@ Rails.application.routes.draw do
         post :pay_with_wechat
       end
     end
-  
+
   namespace :account do
    resources :orders
  end
